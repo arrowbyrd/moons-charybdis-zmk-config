@@ -83,7 +83,7 @@
   };
 };
 
-/ {
+  {
     backlight: pwmleds {
         compatible = "pwm-leds";
         pwm_led_0 {
