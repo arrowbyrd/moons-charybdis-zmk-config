@@ -3,3 +3,15 @@ config SHIELD_CHARYBDIS_LEFT
 
 config SHIELD_CHARYBDIS_RIGHT
 	def_bool $(shields_list_contains,charybdis_right)
+
+config ZMK_BACKLIGHT
+	bool y
+
+onfig ZMK_BACKLIGHT_BRT_START
+    int 50
+
+config ZMK_BACKLIGHT_AUTO_OFF_IDLE
+    bool "Turn off backlight when keyboard goes into idle state"
+
+config ZMK_BACKLIGHT_ON_START
+    bool "Default backlight state"
