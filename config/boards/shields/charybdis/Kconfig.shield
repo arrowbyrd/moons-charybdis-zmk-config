@@ -8,7 +8,7 @@ config ZMK_BACKLIGHT
 	bool "y"
 
 config ZMK_BACKLIGHT_BRT_START
-    int "50"
+    int 50
 
 config ZMK_BACKLIGHT_AUTO_OFF_IDLE
     bool "Turn off backlight when keyboard goes into idle state"
