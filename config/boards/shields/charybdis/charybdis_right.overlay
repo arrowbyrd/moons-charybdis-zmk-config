@@ -92,6 +92,7 @@
 
     led_strip: ws2812@0 {
         compatible = "worldsemi,ws2812-spi";
+        status = "okay";
 
         /* SPI */
         reg = <0>; /* ignored, but necessary for SPI bindings */
@@ -121,8 +122,4 @@
   chosen {
         zmk,underglow = &led_strip;
     };
-};
-
-&led_strip {
-    status = "okay";
 };
