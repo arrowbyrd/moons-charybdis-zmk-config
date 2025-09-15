@@ -105,3 +105,7 @@
     device = <&trackball>;
   };
 };
+
+&led_strip {
+    status = "okay";
+};
